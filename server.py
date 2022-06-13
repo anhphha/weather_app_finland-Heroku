@@ -8,8 +8,12 @@ user_input = "helsinki"
 LAT = 60.1699
 LON = 24.9384
 
-FLASK_APP = Flask(__name__, static_url_path="",
-                  static_folder="web/static", template_folder="web/templates")
+FLASK_APP = Flask(
+    __name__,
+    static_url_path="",
+    static_folder="web/static",
+    template_folder="web/templates",
+)
 
 @FLASK_APP.route('/')
 
