@@ -1,21 +1,19 @@
 # Weatherapp-helsinki
 
-
 Python backend communicating with OpenWeather API. HTML + Javascript frontend website. Test deployed to Heroku using Docker and GitHub actions.
 
 
 ## Main tasks and lessons learned by doing:
 
+1. Create flask server with outbound api calls to obtain weather information
 
-1.Create flask server with outbound api calls to obtain weather information
+2. Add frontend static content to display weather
 
-2.Add frontend static content to display weather
+3. Create Docker container
 
-3.Create Docker container
+4. Deploy app to Heroku
 
-4.Deploy app to Heroku
-
-5.Continuous deployments with GitHub actions
+5. Continuous deployments with GitHub actions
 
 ## Skills that have been practiced:
 
@@ -33,69 +31,66 @@ Python backend communicating with OpenWeather API. HTML + Javascript frontend we
 6.Bootstrap styling
 
 
-## Final production:
+## :fire: Final production - Proof of Concept:
+[
 https://weatherapp-helsinki.herokuapp.com/
 
 
 ## Requirements
 
 
-Python
+- Python
 
-Code editor of your choice
+- Code editor of your choice
 
-Virtual environment (optional)
+- Virtual environment (optional)
 
-Docker
+- Docker
 
-Heroku CLI
+- Heroku CLI
 
-## Helpful Commands
+## :bulb: Helpful Commands
 
-python3 -m venv env
+- `python3 -m venv env`
 
-source ENV/bin/activate
+- `source ENV/bin/activate`
 
-pip install flask requests python-dotenv
+- `pip install flask requests python-dotenv`
 
-pip list
+- `pip list`
 
-export FLASK_ENV=development
+- `export FLASK_ENV=development`
 
-flask run
+- `flask run`
 
+### Docker:
+- `pip freeze > requirements.txt`
 
+- `docker build . -t app`
 
-pip freeze > requirements.txt
+- `docker image ls`
 
-docker build . -t app
-
-docker image ls
-
-docker run -p 5000:5000 --env-file .env app
-
+- `docker run -p 5000:5000 --env-file .env app`
 
 
 heroku login
 
-heroku git:remote -a weatherapp-helsinki (to connect heroku app git)
+- `heroku git:remote -a weatherapp-helsinki` (to connect heroku app git)
 
-git add .
+- `git add .`
 
-git commit -m "added heroku.yml file"
+- `git commit -m "added heroku.yml file"`
 
-heroku create weatherapp-helsinki (if name is taken, choose another)
+- `heroku create weatherapp-helsinki` (if name is taken, choose another)
 
-heroku config:set BASE_URL=https://api.openweathermap.org/data/2.5 --app
+- `heroku config:set BASE_URL=https://api.openweathermap.org/data/2.5 --app weatherapp-helsinki` (set environment variables)
 
-weatherapp-helsinki (set environment variables)
+- `heroku stack:set container --app weatherapp-helsinki`
 
-heroku stack:set container --app weatherapp-helsinki
+- `git push heroku master` (to Manual push to heroku - not required as we use GitHub actions, after committing your changes to git)
 
-git push heroku master (to Manual push to heroku - not required as we use GitHub actions, after committing your changes to git)
+- `git push --force heroku develop:master` (to 'force' push code to heroku when the main code is not at git master/main)
 
-git push --force heroku develop:master (to 'force' push code to heroku when the main code is not at git master/main)
-
-git push heroku develop:main (to push code to heroku from a git branch without force)
+- `git push heroku develop:main` (to push code to heroku from a git branch without force)
 
 
