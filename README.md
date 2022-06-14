@@ -32,7 +32,7 @@ Python backend communicating with OpenWeather API. HTML + Javascript frontend we
 
 
 ## :fire: Final production - Proof of Concept:
-[
+
 https://weatherapp-helsinki.herokuapp.com/
 
 
