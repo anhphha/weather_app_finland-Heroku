@@ -1,5 +1,6 @@
 # :snowman_with_snow: Weather Application - Helsinki Weather
 
+<<<<<<< HEAD
 The web application designed to provide real-time weather updates for Helsinki, Finland. Whether you're a resident or a visitor, staying informed about the weather has never been easier, ensuring that you can make informed decisions about your day.
 
 For Back-end, Python backend communicating with OpenWeather API.
@@ -15,6 +16,7 @@ Stay prepared and in the know with our weather application, designed to enhance 
 
 ## :round_pushpin: Main Task Lists For Application Development
 
+<<<<<<< HEAD
 - [x] Create flask server with outbound api calls to obtain weather information
 - [x] Add frontend static content to display weather
 - [x] Create Docker container
@@ -109,7 +111,7 @@ To 'force' push code to heroku when the main code is not at git master/main
 ```Python
 git push --force heroku develop:master
 ```
+To push code to heroku from a git branch without force
 ```Python
-git push heroku develop:main (to push code to heroku from a git branch without force)
+git push heroku develop:main
 ```
-
