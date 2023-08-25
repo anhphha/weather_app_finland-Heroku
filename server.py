@@ -33,7 +33,7 @@ def current():
             "description" : data["weather"][0]["description"].title(),
             "icon": data["weather"][0]["icon"],
             "name": data["name"],
-            "temperature": data["main"]["temp"],
+            "temperature": round(data["main"]["temp"]- 273.15,1),
             "wind": data["wind"]["speed"]
         }
 
