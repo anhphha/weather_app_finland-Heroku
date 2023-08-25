@@ -1,6 +1,5 @@
 # :snowman_with_snow: Weather Application - Helsinki Weather
 
-<<<<<<< HEAD
 The web application designed to provide real-time weather updates for Helsinki, Finland. Whether you're a resident or a visitor, staying informed about the weather has never been easier, ensuring that you can make informed decisions about your day.
 
 For Back-end, Python backend communicating with OpenWeather API.
@@ -16,7 +15,6 @@ Stay prepared and in the know with our weather application, designed to enhance 
 
 ## :round_pushpin: Main Task Lists For Application Development
 
-<<<<<<< HEAD
 - [x] Create flask server with outbound api calls to obtain weather information
 - [x] Add frontend static content to display weather
 - [x] Create Docker container
@@ -37,9 +35,10 @@ Stay prepared and in the know with our weather application, designed to enhance 
 
 ## :iphone: Screenshots
 
-|                                        |                                        |
-| -------------------------------------- | -------------------------------------- |
-| <img src="images/1.png"  width="1000"/> | <img src="images/2.png"  width="1000"/> |
+|                                         |
+| --------------------------------------- |
+| <img src="images/1.png"  width="1000"/> |
+| <img src="images/2.png"  width="1000"/> |
 
 
 ## :gem: Helpful Commands
@@ -83,7 +82,7 @@ docker run -p 5000:5000 --env-file .env app
 ```Python
 heroku login
 ```
-To connect git repository with heroku app git
+- To connect git repository with heroku app git
 ```Python
 heroku git:remote -a weatherapp-helsinki
 ```
@@ -96,22 +95,22 @@ git commit -m "added heroku.yml file"
 ```Python
 heroku create weatherapp-helsinki //if name is taken, choose another
 ```
-To set environment variables
+- To set environment variables
 ```Python
 heroku config:set BASE_URL=https://api.openweathermap.org/data/2.5 --app weatherapp-helsinki
 ```
 ```Python
 heroku stack:set container --app weatherapp-helsinki
 ```
-To Manual push to heroku - not required as we use GitHub actions, after committing your changes to git
+- To Manual push to heroku - not required as we use GitHub actions, after committing your changes to git
 ```Python
 git push heroku master
 ```
-To 'force' push code to heroku when the main code is not at git master/main
+- To 'force' push code to heroku when the main code is not at git master/main
 ```Python
 git push --force heroku develop:master
 ```
-To push code to heroku from a git branch without force
+- To push code to heroku from a git branch without force
 ```Python
 git push heroku develop:main
 ```
