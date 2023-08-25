@@ -2,6 +2,8 @@
 
 The web application designed to provide real-time weather updates for Helsinki, Finland. Whether you're a resident or a visitor, staying informed about the weather has never been easier, ensuring that you can make informed decisions about your day.
 
+Plan your day confidently with accurate forecasts and trends, making sure you're prepared for whatever the Helsinki weather has in store.
+
 For Back-end, Python backend communicating with OpenWeather API.
 HTML + Javascript frontend website.
 Test deployed to Heroku using Docker and GitHub actions.
