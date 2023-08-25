@@ -82,7 +82,7 @@ docker run -p 5000:5000 --env-file .env app
 ```Python
 heroku login
 ```
-- To connect git repository with heroku app git
+- [x] To connect git repository with heroku app git
 ```Python
 heroku git:remote -a weatherapp-helsinki
 ```
@@ -95,22 +95,22 @@ git commit -m "added heroku.yml file"
 ```Python
 heroku create weatherapp-helsinki //if name is taken, choose another
 ```
-- To set environment variables
+- [x] To set environment variables
 ```Python
 heroku config:set BASE_URL=https://api.openweathermap.org/data/2.5 --app weatherapp-helsinki
 ```
 ```Python
 heroku stack:set container --app weatherapp-helsinki
 ```
-- To Manual push to heroku - not required as we use GitHub actions, after committing your changes to git
+- [x] To Manual push to heroku - not required as we use GitHub actions, after committing your changes to git
 ```Python
 git push heroku master
 ```
-- To 'force' push code to heroku when the main code is not at git master/main
+- [x] To 'force' push code to heroku when the main code is not at git master/main
 ```Python
 git push --force heroku develop:master
 ```
-- To push code to heroku from a git branch without force
+- [x] To push code to heroku from a git branch without force
 ```Python
 git push heroku develop:main
 ```
